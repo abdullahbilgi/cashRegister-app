@@ -8,6 +8,8 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User,Long> {
 
+    Optional<User> findByUsername(String username);
+
     @Query("select u from User u left JOIN FETCH u.roles where u.username = ?1")
     Optional<User> findByUsernameEagerly(String username);
 }
