@@ -36,5 +36,5 @@ public class UserDTO {
     @Pattern(regexp = "^[A-Za-z]+$", message = "Surname must contain only letters")
     private String surname;
 
-    private Set<UserDTO> roles;
+    private Set<RoleDTO> roles;
 }
