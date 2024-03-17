@@ -61,6 +61,13 @@ public class UserAdminFacade {
         return userMapper.map(savedUser);
     }
 
+    public void assignRole(Long userId, Long roleId){
+        User user = userService.findUser(userId);
+        Role role = roleService.findRole(roleId);
+        user.getRoles().add(role);
+        userService.saveUser(user);
+    }
+
     public void removeRole(Long userId,Long roleId){
         User user = userService.findUser(userId);
         Role role = roleService.findRole(roleId);
