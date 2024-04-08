@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .addFilterBefore(new JWTTokenValidatorFilter(), BasicAuthenticationFilter.class)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/v1/**").hasAnyRole("CASHIER", "ADMIN")
+                        .requestMatchers("/api/v1/**").hasAnyRole("CASHIER", "MANAGER","ADMIN")
                         .requestMatchers("/signup").permitAll()
                         .anyRequest().denyAll())
                 .httpBasic(Customizer.withDefaults())
