@@ -51,7 +51,7 @@ public class UserAdminController {
         userAdminFacade.assignRole(id, roleId);
     }
 
-    @PostMapping("/{id}/role/{roleId}")
+    @DeleteMapping("/{id}/role/{roleId}")
     @ResponseStatus(HttpStatus.OK)
     public void removeRole(@PathVariable("id") Long id,@PathVariable("roleId") Long roleId){
         userAdminFacade.removeRole(id, roleId);
