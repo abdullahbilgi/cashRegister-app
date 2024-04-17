@@ -9,3 +9,36 @@ server:
 spring:
   application:
     name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth-ws-login
+          uri: lb://auth-ws
+          predicates:
+            - Path=/auth-ws/login
+            - Method=POST
+          filters:
+            - RewritePath=/auth-ws/(?<segment>.*), /$\{segment}
+
+        - id: user-ws-admin
+          uri: lb://user-ws
+          predicates:
+            - Path=/user-ws/api/v1/admin/**
+          filters:
+            - RewritePath=/user-ws/(?<segment>.*), /$\{segment}
+
+        - id: user-ws-users
+          uri: lb://user-ws
+          predicates:
+            - Path=/user-ws/api/v1/**
+          filters:
+            - RewritePath=/user-ws/(?<segment>.*), /$\{segment}
+
+        - id: user-ws-signup
+          uri: lb://user-ws
+          predicates:
+            - Path=/user-ws/signup
+            - Method=POST
+          filters:
+            - RewritePath=/user-ws/(?<segment>.*), /$\{segment}
+
