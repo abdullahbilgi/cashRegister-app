@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="api gateway created">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="api gateway routes added for user-ws and auth-ws">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/project/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/project/userservice/UserserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/UserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/UserserviceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,37 +40,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AbdullahBilgi/Desktop/cashRegister-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.UserAdminControllerTest.Test.executor": "Run",
+    "JUnit.UserAdminControllerTest.assingRoleUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.deleteUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getAllStudentHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getAllStudentUnauthorizedHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.removeRoleUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.saveUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.updateUserHttpRequest.executor": "Run",
+    "JUnit.UserserviceApplicationTests.contextLoads.executor": "Run",
+    "JUnit.UserserviceApplicationTests.executor": "Run",
+    "JUnit.com.project.userservice.controller.admin in userservice.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.UserserviceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/AbdullahBilgi/Desktop/cashRegister-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AbdullahBilgi\Desktop\cashRegister-app\user-service\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.project.apigateway" />
     </key>
@@ -83,7 +100,85 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+  <component name="RunManager" selected="JUnit.UserAdminControllerTest.updateUserHttpRequest">
+    <configuration name="UserAdminControllerTest.assingRoleUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.UserAdminControllerTest" />
+      <option name="METHOD_NAME" value="assingRoleUserHttpRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAdminControllerTest.removeRoleUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.UserAdminControllerTest" />
+      <option name="METHOD_NAME" value="removeRoleUserHttpRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAdminControllerTest.saveUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.UserAdminControllerTest" />
+      <option name="METHOD_NAME" value="saveUserHttpRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAdminControllerTest.updateUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.UserAdminControllerTest" />
+      <option name="METHOD_NAME" value="updateUserHttpRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.project.userservice.controller.admin in userservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="apigateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.apigateway.ApiGatewayApplication" />
@@ -114,11 +209,25 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserAdminControllerTest.assingRoleUserHttpRequest" />
+      <item itemvalue="JUnit.UserAdminControllerTest.removeRoleUserHttpRequest" />
+      <item itemvalue="JUnit.UserAdminControllerTest.updateUserHttpRequest" />
+      <item itemvalue="JUnit.UserAdminControllerTest.saveUserHttpRequest" />
+      <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.UserserviceApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserAdminControllerTest.updateUserHttpRequest" />
+        <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
+        <item itemvalue="JUnit.UserAdminControllerTest.saveUserHttpRequest" />
+        <item itemvalue="JUnit.UserAdminControllerTest.removeRoleUserHttpRequest" />
+        <item itemvalue="JUnit.UserAdminControllerTest.assingRoleUserHttpRequest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -138,7 +247,11 @@
       <workItem from="1712586682665" duration="1778000" />
       <workItem from="1712657091466" duration="10735000" />
       <workItem from="1713340426448" duration="7134000" />
-      <workItem from="1713357738925" duration="1364000" />
+      <workItem from="1713357738925" duration="2417000" />
+      <workItem from="1713449186149" duration="15000" />
+      <workItem from="1714247115301" duration="465000" />
+      <workItem from="1718360366729" duration="12136000" />
+      <workItem from="1718525249619" duration="16243000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -164,16 +277,36 @@
       <option name="project" value="LOCAL" />
       <updated>1712671533167</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="api gateway routes added for user-ws and auth-ws">
+      <option name="closed" value="true" />
+      <created>1713360120174</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713360120174</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="eureka discovery server added the project" />
     <MESSAGE value="services signed up to eureka server" />
     <MESSAGE value="api gateway created" />
-    <option name="LAST_COMMIT_MESSAGE" value="api gateway created" />
+    <MESSAGE value="api gateway routes added for user-ws and auth-ws" />
+    <option name="LAST_COMMIT_MESSAGE" value="api gateway routes added for user-ws and auth-ws" />
   </component>
 </project>
