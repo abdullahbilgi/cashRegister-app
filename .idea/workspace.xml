@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created user-service Facade package Tests">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created product-service project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +107,7 @@
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.UserserviceApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -118,6 +118,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -150,7 +151,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.project.userservice in userservice">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="userservice" />
       <extension name="coverage">
@@ -307,7 +308,7 @@
       <workItem from="1718525249619" duration="19240000" />
       <workItem from="1718725341690" duration="14292000" />
       <workItem from="1718833805021" duration="7120000" />
-      <workItem from="1718893518819" duration="13878000" />
+      <workItem from="1718893518819" duration="16783000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -365,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718908496394</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created product-service project">
+      <option name="closed" value="true" />
+      <created>1718913341580</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718913341580</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +399,7 @@
     <MESSAGE value="created user-service UserAdminController Tests" />
     <MESSAGE value="created user-service UserController and RoleController Tests" />
     <MESSAGE value="created user-service Facade package Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="created user-service Facade package Tests" />
+    <MESSAGE value="created product-service project" />
+    <option name="LAST_COMMIT_MESSAGE" value="created product-service project" />
   </component>
 </project>
