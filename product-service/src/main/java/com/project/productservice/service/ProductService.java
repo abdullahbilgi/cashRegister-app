@@ -7,7 +7,7 @@ import org.springframework.data.domain.Pageable;
 
 public interface ProductService {
 
-    Page<Product> findAllEvents(Pageable pageable);
+    Page<Product> findAllProducts(Pageable pageable);
 
     Product findProduct(Long id);
 

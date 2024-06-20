@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 @SpringBootApplication(exclude ={UserDetailsServiceAutoConfiguration.class})
-
+@EnableMethodSecurity
 public class ProductServiceApplication {
 
 	public static void main(String[] args) {

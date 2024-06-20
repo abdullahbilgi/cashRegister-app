@@ -16,7 +16,7 @@ public class ProductServiceImpl implements ProductService{
     private final ProductRepository productRepository;
 
     @Override
-    public Page<Product> findAllEvents(Pageable pageable) {
+    public Page<Product> findAllProducts(Pageable pageable) {
         return productRepository.findAll(pageable);
     }
 
