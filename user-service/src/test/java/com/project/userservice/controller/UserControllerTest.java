@@ -1,8 +1,10 @@
 package com.project.userservice.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.project.userservice.dto.UserDTO;
 import com.project.userservice.entity.Role;
 import com.project.userservice.entity.User;
+import com.project.userservice.facade.UserFacade;
 import com.project.userservice.repository.RoleRepository;
 import com.project.userservice.repository.UserRepository;
 import org.junit.jupiter.api.AfterEach;
@@ -37,6 +39,9 @@ public class UserControllerTest {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private UserFacade userFacade;
 
     @Autowired
     private MockMvc mockMvc;
@@ -82,6 +87,25 @@ public class UserControllerTest {
                 .andExpect(jsonPath("$.name",is("manager")))
                 .andExpect(jsonPath("$.username",is("managertest")));
 
+    }
+
+    @Test
+    @WithMockUser(username = "managertest",roles = {"MANAGER"})
+    void updateUserHttpRequest() throws Exception{
+
+        UserDTO userDTO = userFacade.findUserByUsername();
+        userDTO.setPassword("dummy");
+        userDTO.setName("abc");
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/v1/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(userDTO)))
+                .andExpect(status().isAccepted());
+
+        Optional<User> updatedUser = userRepository.findByUsernameEagerly("managertest");
+
+        assertEquals(updatedUser.get().getName(),userDTO.getName());
     }
 
     @Test

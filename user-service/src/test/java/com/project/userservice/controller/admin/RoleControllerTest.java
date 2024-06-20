@@ -1,7 +1,11 @@
 package com.project.userservice.controller.admin;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.project.userservice.dto.RoleDTO;
+import com.project.userservice.dto.UserDTO;
 import com.project.userservice.entity.Role;
+import com.project.userservice.entity.User;
+import com.project.userservice.facade.admin.RoleFacade;
 import com.project.userservice.repository.RoleRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,6 +26,7 @@ import java.util.Optional;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @TestPropertySource("/application-test.properties")
@@ -38,6 +43,9 @@ public class RoleControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private RoleFacade roleFacade;
 
     @Autowired
     ObjectMapper objectMapper;
@@ -59,6 +67,8 @@ public class RoleControllerTest {
 
     @Value("${sql.script.delete.user_role}")
     private String sqlDeleteUsersRoles;
+
+    private RoleDTO roleDTO;
 
     public static final MediaType APPLICATION_JSON_UFT8 = MediaType.APPLICATION_JSON;
 
@@ -104,6 +114,49 @@ public class RoleControllerTest {
         Optional<Role> role = roleRepository.findById(3L);
 
         assertTrue(role.isEmpty());
+    }
+
+   /* @Test
+    @WithMockUser(username = "admintest",roles = {"ADMIN"})
+    void saveRoleHttpRequest() throws Exception{
+
+        roleDTO = RoleDTO.builder()
+                .id(4L)
+                .name("ABC")
+                .description("This is a abc role")
+                .build();
+
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/admin/roles")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(roleDTO))
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$",hasSize(4)));
+
+
+
+    }*/
+
+    @Test
+    @WithMockUser(username = "admintest",roles = {"ADMIN"})
+    void updateRoleHttpRequest() throws Exception{
+
+        RoleDTO role = roleFacade.findRole(3L);
+
+        role.setDescription("dummy");
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/v1/admin/roles/{id}",3L)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(role)))
+                .andExpect(status().isAccepted());
+
+        Optional<Role> role1 = roleRepository.findById(3L);
+
+        assertEquals("dummy",role1.get().getDescription());
+
+
     }
 
 

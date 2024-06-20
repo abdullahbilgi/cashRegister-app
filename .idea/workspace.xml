@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created user-service UserAdminController Tests">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created user-service UserController and RoleController Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/RoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/RoleControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/UserAdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/UserAdminControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,16 @@
     "JUnit.RoleControllerTest.executor": "Run",
     "JUnit.RoleControllerTest.getAllRolesHttpRequest.executor": "Run",
     "JUnit.RoleControllerTest.getRoleHttpRequest.executor": "Run",
+    "JUnit.RoleControllerTest.saveRoleHttpRequest.executor": "Run",
     "JUnit.RoleControllerTest.test.executor": "Run",
+    "JUnit.RoleControllerTest.updateRoleHttpRequest.executor": "Run",
+    "JUnit.RoleFacadeTest.deleteRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.executor": "Run",
+    "JUnit.RoleFacadeTest.findAllRolesTest.executor": "Run",
+    "JUnit.RoleFacadeTest.findRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.saveRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.test.executor": "Run",
+    "JUnit.RoleFacadeTest.updateRoleTest.executor": "Run",
     "JUnit.UserAdminControllerTest.Test.executor": "Run",
     "JUnit.UserAdminControllerTest.assingRoleUserHttpRequest.executor": "Run",
     "JUnit.UserAdminControllerTest.deleteUserHttpRequest.executor": "Run",
@@ -54,12 +66,37 @@
     "JUnit.UserAdminControllerTest.removeRoleUserHttpRequest.executor": "Run",
     "JUnit.UserAdminControllerTest.saveUserHttpRequest.executor": "Run",
     "JUnit.UserAdminControllerTest.updateUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.assignRoleTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.deleteUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.findAllUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.findUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.getUser.executor": "Run",
+    "JUnit.UserAdminFacadeTest.givenUsersList_getAllUsers.executor": "Run",
+    "JUnit.UserAdminFacadeTest.removeRole.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveAndMapTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveUser.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.test.executor": "Run",
+    "JUnit.UserAdminFacadeTest.updateUser.executor": "Run",
     "JUnit.UserControllerTest.Test.executor": "Run",
     "JUnit.UserControllerTest.deleteUserHttpRequest.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
     "JUnit.UserControllerTest.getUserHttpRequest.executor": "Run",
+    "JUnit.UserControllerTest.updateUserHttpRequest.executor": "Run",
+    "JUnit.UserFacadeTest.deleteUserTest.executor": "Run",
+    "JUnit.UserFacadeTest.executor": "Run",
+    "JUnit.UserFacadeTest.findUserByUsername.executor": "Run",
+    "JUnit.UserFacadeTest.findUserByUsernameTest.executor": "Run",
+    "JUnit.UserFacadeTest.test.executor": "Run",
+    "JUnit.UserFacadeTest.updateUserTest.executor": "Run",
     "JUnit.UserserviceApplicationTests.contextLoads.executor": "Run",
     "JUnit.UserserviceApplicationTests.executor": "Run",
+    "JUnit.com.project.userservice in userservice.executor": "Run",
+    "JUnit.com.project.userservice.controller in userservice.executor": "Run",
     "JUnit.com.project.userservice.controller.admin in userservice.executor": "Run",
+    "JUnit.com.project.userservice.facade in userservice.executor": "Run",
+    "JUnit.com.project.userservice.facade.admin in userservice.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -88,11 +125,15 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AbdullahBilgi\Desktop\cashRegister-app\user-service\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.project.userservice.facade" />
       <recent name="com.project.userservice.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -108,23 +149,67 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.deleteUserHttpRequest">
-    <configuration name="RoleControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.project.userservice in userservice">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="userservice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.project.userservice.controller.admin.*" />
+          <option name="PATTERN" value="com.project.userservice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
-      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.RoleControllerTest" />
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.UserControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleControllerTest.deleteRoleHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.updateUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="updateUserHttpRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.project.userservice in userservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.project.userservice.controller in userservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.userservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.project.userservice.controller.admin in userservice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="userservice" />
       <extension name="coverage">
         <pattern>
@@ -133,57 +218,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.project.userservice.controller.admin" />
-      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.admin.RoleControllerTest" />
-      <option name="METHOD_NAME" value="deleteRoleHttpRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="userservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.userservice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.deleteUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="userservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.userservice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="deleteUserHttpRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.getUserHttpRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="userservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.userservice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.userservice.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.project.userservice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="getUserHttpRequest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,11 +253,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RoleControllerTest" />
-      <item itemvalue="JUnit.RoleControllerTest.deleteRoleHttpRequest" />
-      <item itemvalue="JUnit.UserControllerTest.Test" />
-      <item itemvalue="JUnit.UserControllerTest.deleteUserHttpRequest" />
-      <item itemvalue="JUnit.UserControllerTest.getUserHttpRequest" />
+      <item itemvalue="JUnit.UserControllerTest" />
+      <item itemvalue="JUnit.UserControllerTest.updateUserHttpRequest" />
+      <item itemvalue="JUnit.com.project.userservice in userservice" />
+      <item itemvalue="JUnit.com.project.userservice.controller in userservice" />
+      <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -230,11 +265,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserControllerTest.deleteUserHttpRequest" />
-        <item itemvalue="JUnit.UserControllerTest.getUserHttpRequest" />
-        <item itemvalue="JUnit.UserControllerTest.Test" />
-        <item itemvalue="JUnit.RoleControllerTest" />
-        <item itemvalue="JUnit.RoleControllerTest.deleteRoleHttpRequest" />
+        <item itemvalue="JUnit.com.project.userservice in userservice" />
+        <item itemvalue="JUnit.com.project.userservice.controller in userservice" />
+        <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
+        <item itemvalue="JUnit.UserControllerTest.updateUserHttpRequest" />
+        <item itemvalue="JUnit.UserControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +295,10 @@
       <workItem from="1713449186149" duration="15000" />
       <workItem from="1714247115301" duration="465000" />
       <workItem from="1718360366729" duration="12136000" />
-      <workItem from="1718525249619" duration="18434000" />
+      <workItem from="1718525249619" duration="19240000" />
+      <workItem from="1718725341690" duration="14292000" />
+      <workItem from="1718833805021" duration="7120000" />
+      <workItem from="1718893518819" duration="11142000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -302,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718548744604</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created user-service UserController and RoleController Tests">
+      <option name="closed" value="true" />
+      <created>1718551094068</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718551094068</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +371,7 @@
     <MESSAGE value="api gateway created" />
     <MESSAGE value="api gateway routes added for user-ws and auth-ws" />
     <MESSAGE value="created user-service UserAdminController Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="created user-service UserAdminController Tests" />
+    <MESSAGE value="created user-service UserController and RoleController Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="created user-service UserController and RoleController Tests" />
   </component>
 </project>

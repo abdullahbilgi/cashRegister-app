@@ -2,6 +2,7 @@ package com.project.userservice.controller.admin;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.project.userservice.dto.UserDTO;
+import com.project.userservice.entity.Role;
 import com.project.userservice.entity.User;
 import com.project.userservice.facade.admin.UserAdminFacade;
 import com.project.userservice.mapper.UserMapper;
@@ -31,6 +32,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
@@ -97,6 +99,9 @@ public class UserAdminControllerTest {
 
     @Value("${sql.script.delete.user_role}")
     private String sqlDeleteUsersRoles;
+
+    @Autowired
+    private UserMapper userMapper;
 
 
 
@@ -186,41 +191,47 @@ public class UserAdminControllerTest {
     void saveUserHttpRequest() throws Exception{
 
         UserDTO userDTO = UserDTO.builder()
+                        //.id(null)
                         .name("user")
                         .surname("Test")
-                        .password("$2a$10$U4dtBxoInnEYmbeU3elni.dNtvBlhcNksgdYs4XtUetxvovNweEcF")
+                        .password("dummy")
                         .username("usertest")
                         .build();
 
-        given(userAdminFacade.saveUser(any(UserDTO.class))).
-                .willAnser(invocation -> invocation.getArgument(0));
+        UserDTO savedUser = userAdminFacade.saveUser(userDTO);
 
-
-
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/admin/users")
+                .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(savedUser))
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isAccepted())
+                .andExpect(jsonPath("$.name",is("user")));
 
 
     }*/
 
-    /*@Test
+    @Test
     @WithMockUser(username = "admintest",roles = {"ADMIN"})
     void updateUserHttpRequest() throws Exception{
 
-        Optional<User> user = userRepository.findById(3L);
+        UserDTO user = userAdminFacade.findUser(3L);
+        user.setPassword("dummy");
 
-        assertEquals("cashiertest",user.get().getUsername());
 
-        user.get().setUsername("usertest");
+        assertEquals("cashiertest", user.getUsername());
+
+        user.setUsername("usertest");
 
         mockMvc.perform(MockMvcRequestBuilders.put("/api/v1/admin/users/{id}",3L)
-                .contentType(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(user)))
+                        .content(objectMapper.writeValueAsString(user)))
                 .andExpect(status().isAccepted());
 
         Optional<User> user1 = userRepository.findById(3L);
 
         assertEquals("usertest",user1.get().getUsername());
-    }*/
+    }
 
 
     @Test
