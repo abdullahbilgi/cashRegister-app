@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created user-service UserController and RoleController Tests">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created user-service Facade package Tests">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/RoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/RoleControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/UserAdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/userservice/controller/admin/UserAdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +245,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="productservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.productservice.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="bootstrap" />
       <module name="userservice" />
@@ -258,6 +266,7 @@
       <item itemvalue="JUnit.com.project.userservice in userservice" />
       <item itemvalue="JUnit.com.project.userservice.controller in userservice" />
       <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
@@ -298,7 +307,7 @@
       <workItem from="1718525249619" duration="19240000" />
       <workItem from="1718725341690" duration="14292000" />
       <workItem from="1718833805021" duration="7120000" />
-      <workItem from="1718893518819" duration="11142000" />
+      <workItem from="1718893518819" duration="13878000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -348,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718551094068</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created user-service Facade package Tests">
+      <option name="closed" value="true" />
+      <created>1718908496394</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718908496394</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +389,7 @@
     <MESSAGE value="api gateway routes added for user-ws and auth-ws" />
     <MESSAGE value="created user-service UserAdminController Tests" />
     <MESSAGE value="created user-service UserController and RoleController Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="created user-service UserController and RoleController Tests" />
+    <MESSAGE value="created user-service Facade package Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="created user-service Facade package Tests" />
   </component>
 </project>
