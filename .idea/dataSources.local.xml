@@ -14,7 +14,9 @@
             <node kind="database" qname="@">
               <node kind="schema" qname="@" />
             </node>
-            <node kind="database" qname="user-service">
+            <node kind="database">
+              <name qname="product-service" />
+              <name qname="user-service" />
               <node kind="schema" negative="1" />
             </node>
           </node>
