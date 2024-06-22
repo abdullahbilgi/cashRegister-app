@@ -38,7 +38,7 @@ public class ProductFacade {
     public ProductDTO updateProduct(Long id,ProductDTO productDTO){
         Product savingProduct = productMapper.reverseMap(productDTO);
         savingProduct.setId(id);
-        return productMapper.map(savingProduct);
+        return saveAndMap(savingProduct);
 
     }
 

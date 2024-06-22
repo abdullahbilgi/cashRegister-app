@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created product facade for product-service">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/165311ec-0d79-4619-b467-751ad0dc7805/storage_v2/_src_/database/user-service.s5o4hw/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created controller package for product-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,6 +311,9 @@
       <workItem from="1718833805021" duration="7120000" />
       <workItem from="1718893518819" duration="21076000" />
       <workItem from="1718989840636" duration="2935000" />
+      <workItem from="1719012120177" duration="728000" />
+      <workItem from="1719068953031" duration="3499000" />
+      <workItem from="1719087908289" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -419,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718924855955</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created controller package for product-service">
+      <option name="closed" value="true" />
+      <created>1719012338895</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719012338895</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +458,7 @@
     <MESSAGE value="created custom object mapper for product-service" />
     <MESSAGE value="created product service for product-service" />
     <MESSAGE value="created product facade for product-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="created product facade for product-service" />
+    <MESSAGE value="created controller package for product-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="created controller package for product-service" />
   </component>
 </project>

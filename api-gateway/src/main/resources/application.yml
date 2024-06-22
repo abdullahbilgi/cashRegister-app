@@ -42,3 +42,11 @@ spring:
           filters:
             - RewritePath=/user-ws/(?<segment>.*), /$\{segment}
 
+        - id: product-ws-request
+          uri: lb://product-ws
+          predicates:
+            - Path=/product-ws/api/v1/**
+
+          filters:
+            - RewritePath=/product-ws/(?<segment>.*), /$\{segment}
+

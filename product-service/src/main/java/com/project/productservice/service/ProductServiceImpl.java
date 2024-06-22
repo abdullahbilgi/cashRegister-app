@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService{
 
         Optional<Product> productOpt = productRepository.findById(id);
         if (productOpt.isEmpty()){
-            throw new RuntimeException("There's no event with id: " + id);
+            throw new RuntimeException("There's no product with id: " + id);
         }
 
         return productOpt.get();
