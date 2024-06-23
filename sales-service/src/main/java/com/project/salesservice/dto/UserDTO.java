@@ -12,6 +12,11 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDTO implements UserDetails {
+
+
+    private Long id;
+    private String username;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;

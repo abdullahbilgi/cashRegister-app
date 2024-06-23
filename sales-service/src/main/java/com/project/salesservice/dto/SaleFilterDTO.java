@@ -4,9 +4,9 @@ import lombok.*;
 
 @Getter
 @Setter
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class SaleFilterDTO {
 
     private Long minCount;

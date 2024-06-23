@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="mapper classes created for sales-service" />
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="configuration security class created for sales-service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/dto/SaleFilterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/dto/SaleFilterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/dto/UserDTO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,93 +40,94 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.RoleControllerTest.deleteRoleHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.getAllRolesHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.getRoleHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.saveRoleHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleControllerTest.updateRoleHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.deleteRoleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.findAllRolesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.findRoleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.saveRoleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RoleFacadeTest.updateRoleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.assingRoleUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.deleteUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.getAllStudentHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.getAllStudentUnauthorizedHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.getUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.removeRoleUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.saveUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminControllerTest.updateUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.assignRoleTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.deleteUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.findAllUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.findUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.getUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.givenUsersList_getAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.removeRole.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.saveAndMapTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.saveUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.saveUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserAdminFacadeTest.updateUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.deleteUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.getUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.updateUserHttpRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.deleteUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.findUserByUsername.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.findUserByUsernameTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserFacadeTest.updateUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserserviceApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserserviceApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.project.userservice in userservice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.project.userservice.controller in userservice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.project.userservice.controller.admin in userservice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.project.userservice.facade in userservice.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.com.project.userservice.facade.admin in userservice.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserserviceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AbdullahBilgi/Desktop/cashRegister-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.RoleControllerTest.deleteRoleHttpRequest.executor": "Run",
+    "JUnit.RoleControllerTest.executor": "Run",
+    "JUnit.RoleControllerTest.getAllRolesHttpRequest.executor": "Run",
+    "JUnit.RoleControllerTest.getRoleHttpRequest.executor": "Run",
+    "JUnit.RoleControllerTest.saveRoleHttpRequest.executor": "Run",
+    "JUnit.RoleControllerTest.test.executor": "Run",
+    "JUnit.RoleControllerTest.updateRoleHttpRequest.executor": "Run",
+    "JUnit.RoleFacadeTest.deleteRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.executor": "Run",
+    "JUnit.RoleFacadeTest.findAllRolesTest.executor": "Run",
+    "JUnit.RoleFacadeTest.findRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.saveRoleTest.executor": "Run",
+    "JUnit.RoleFacadeTest.test.executor": "Run",
+    "JUnit.RoleFacadeTest.updateRoleTest.executor": "Run",
+    "JUnit.UserAdminControllerTest.Test.executor": "Run",
+    "JUnit.UserAdminControllerTest.assingRoleUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.deleteUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getAllStudentHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getAllStudentUnauthorizedHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.getUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.removeRoleUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.saveUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminControllerTest.updateUserHttpRequest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.assignRoleTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.deleteUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.findAllUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.findUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.getUser.executor": "Run",
+    "JUnit.UserAdminFacadeTest.givenUsersList_getAllUsers.executor": "Run",
+    "JUnit.UserAdminFacadeTest.removeRole.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveAndMapTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveUser.executor": "Run",
+    "JUnit.UserAdminFacadeTest.saveUserTest.executor": "Run",
+    "JUnit.UserAdminFacadeTest.test.executor": "Run",
+    "JUnit.UserAdminFacadeTest.updateUser.executor": "Run",
+    "JUnit.UserControllerTest.Test.executor": "Run",
+    "JUnit.UserControllerTest.deleteUserHttpRequest.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.getUserHttpRequest.executor": "Run",
+    "JUnit.UserControllerTest.updateUserHttpRequest.executor": "Run",
+    "JUnit.UserFacadeTest.deleteUserTest.executor": "Run",
+    "JUnit.UserFacadeTest.executor": "Run",
+    "JUnit.UserFacadeTest.findUserByUsername.executor": "Run",
+    "JUnit.UserFacadeTest.findUserByUsernameTest.executor": "Run",
+    "JUnit.UserFacadeTest.test.executor": "Run",
+    "JUnit.UserFacadeTest.updateUserTest.executor": "Run",
+    "JUnit.UserserviceApplicationTests.contextLoads.executor": "Run",
+    "JUnit.UserserviceApplicationTests.executor": "Run",
+    "JUnit.com.project.userservice in userservice.executor": "Run",
+    "JUnit.com.project.userservice.controller in userservice.executor": "Run",
+    "JUnit.com.project.userservice.controller.admin in userservice.executor": "Run",
+    "JUnit.com.project.userservice.facade in userservice.executor": "Run",
+    "JUnit.com.project.userservice.facade.admin in userservice.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServerApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.SalesServiceApplication.executor": "Run",
+    "Spring Boot.UserserviceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/AbdullahBilgi/Desktop/cashRegister-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -147,7 +152,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.SalesServiceApplication">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="userservice" />
       <extension name="coverage">
@@ -318,7 +323,7 @@
       <workItem from="1719068953031" duration="3499000" />
       <workItem from="1719087908289" duration="1423000" />
       <workItem from="1719153084002" duration="814000" />
-      <workItem from="1719174207635" duration="5094000" />
+      <workItem from="1719174207635" duration="6483000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -472,7 +477,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719181635743</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="configuration security class created for sales-service">
+      <option name="closed" value="true" />
+      <created>1719182080746</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719182080746</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,6 +522,7 @@
     <MESSAGE value="sale entity class created for sales-service" />
     <MESSAGE value="dto classes created for sales-service" />
     <MESSAGE value="mapper classes created for sales-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="mapper classes created for sales-service" />
+    <MESSAGE value="configuration security class created for sales-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration security class created for sales-service" />
   </component>
 </project>
