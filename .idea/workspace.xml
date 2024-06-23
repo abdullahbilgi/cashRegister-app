@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created controller package for product-service">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created JWT filter for product-service">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/ProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/project/productservice/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +254,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalesServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="salesservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.salesservice.SalesServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="bootstrap" />
       <module name="userservice" />
@@ -268,6 +275,7 @@
       <item itemvalue="JUnit.com.project.userservice in userservice" />
       <item itemvalue="JUnit.com.project.userservice.controller in userservice" />
       <item itemvalue="JUnit.com.project.userservice.controller.admin in userservice" />
+      <item itemvalue="Spring Boot.SalesServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.DiscoveryServerApplication" />
@@ -313,7 +321,9 @@
       <workItem from="1718989840636" duration="2935000" />
       <workItem from="1719012120177" duration="728000" />
       <workItem from="1719068953031" duration="3499000" />
-      <workItem from="1719087908289" duration="315000" />
+      <workItem from="1719087908289" duration="1423000" />
+      <workItem from="1719153084002" duration="814000" />
+      <workItem from="1719174207635" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -427,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719012338895</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="created JWT filter for product-service">
+      <option name="closed" value="true" />
+      <created>1719088656777</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719088656777</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +477,7 @@
     <MESSAGE value="created product service for product-service" />
     <MESSAGE value="created product facade for product-service" />
     <MESSAGE value="created controller package for product-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="created controller package for product-service" />
+    <MESSAGE value="created JWT filter for product-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="created JWT filter for product-service" />
   </component>
 </project>
