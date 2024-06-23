@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created JWT filter for product-service">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="created sales-service project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/SalesServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/SalesServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +321,7 @@
       <workItem from="1719068953031" duration="3499000" />
       <workItem from="1719087908289" duration="1423000" />
       <workItem from="1719153084002" duration="814000" />
-      <workItem from="1719174207635" duration="332000" />
+      <workItem from="1719174207635" duration="2911000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -445,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719088656777</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="created sales-service project">
+      <option name="closed" value="true" />
+      <created>1719174768367</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719174768367</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,6 +484,7 @@
     <MESSAGE value="created product facade for product-service" />
     <MESSAGE value="created controller package for product-service" />
     <MESSAGE value="created JWT filter for product-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="created JWT filter for product-service" />
+    <MESSAGE value="created sales-service project" />
+    <option name="LAST_COMMIT_MESSAGE" value="created sales-service project" />
   </component>
 </project>
