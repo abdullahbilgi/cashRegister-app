@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="repository classes created for sales-service">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="service class created for sales-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/service/SaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/service/SaleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/service/SaleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/service/SaleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +322,7 @@
       <workItem from="1719087908289" duration="1423000" />
       <workItem from="1719153084002" duration="814000" />
       <workItem from="1719174207635" duration="7217000" />
-      <workItem from="1719223144449" duration="1794000" />
+      <workItem from="1719223144449" duration="5353000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -494,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719183597960</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="service class created for sales-service">
+      <option name="closed" value="true" />
+      <created>1719225631863</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225631863</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,6 +539,7 @@
     <MESSAGE value="mapper classes created for sales-service" />
     <MESSAGE value="configuration security class created for sales-service" />
     <MESSAGE value="repository classes created for sales-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="repository classes created for sales-service" />
+    <MESSAGE value="service class created for sales-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="service class created for sales-service" />
   </component>
 </project>
