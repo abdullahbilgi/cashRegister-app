@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="constants class added sales-service">
+    <list default="true" id="33e07cae-71ee-4da8-a223-1934243ad3fe" name="Changes" comment="Util class added sales-service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/util/GeneralUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sales-service/src/main/java/com/project/salesservice/util/GeneralUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +323,7 @@
       <workItem from="1719153084002" duration="814000" />
       <workItem from="1719174207635" duration="7217000" />
       <workItem from="1719223144449" duration="5883000" />
-      <workItem from="1719257764644" duration="1010000" />
+      <workItem from="1719257764644" duration="2845000" />
     </task>
     <task id="LOCAL-00001" summary="eureka discovery server added the project">
       <option name="closed" value="true" />
@@ -510,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719229126822</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Util class added sales-service">
+      <option name="closed" value="true" />
+      <created>1719259058914</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1719259058914</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,6 +558,7 @@
     <MESSAGE value="repository classes created for sales-service" />
     <MESSAGE value="service class created for sales-service" />
     <MESSAGE value="constants class added sales-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="constants class added sales-service" />
+    <MESSAGE value="Util class added sales-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Util class added sales-service" />
   </component>
 </project>
